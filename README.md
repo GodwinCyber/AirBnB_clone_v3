@@ -8,6 +8,77 @@ The console is the first segment of the AirBnB project at Holberton School that 
 * Update attributes of an object
 * Destroy an object
 
+## Resources
+* <p><strong>Read or watch</strong>:</p>
+
+<ul>
+<li><strong>REST API</strong> concept page</li>
+<li><a href="/rltoken/rycjU2GvZAlahHa61WWDBg" title="Learn REST: A RESTful Tutorial" target="_blank">Learn REST: A RESTful Tutorial</a> </li>
+<li><a href="/rltoken/WfKwKtaROCybta0_E849AQ" title="Designing a RESTful API with Python and Flask" target="_blank">Designing a RESTful API with Python and Flask</a> </li>
+<li><a href="/rltoken/D55IFF8lgZDLPyIX6b6C5A" title="HTTP access control (CORS)" target="_blank">HTTP access control (CORS)</a> </li>
+<li><a href="/rltoken/L01qANfgx0al8_an4mtPuw" title="Flask cheatsheet" target="_blank">Flask cheatsheet</a> </li>
+<li><a href="/rltoken/QxbV8TCzNl3oP9br8CV5Lw" title="What are Flask Blueprints, exactly?" target="_blank">What are Flask Blueprints, exactly?</a> </li>
+<li><a href="/rltoken/OLWDl7iDVpWKykekaznWpQ" title="Flask" target="_blank">Flask</a> </li>
+<li><a href="/rltoken/y3Lhj6w1g59MA_HPtc578w" title="Modular Applications with Blueprints" target="_blank">Modular Applications with Blueprints</a> </li>
+<li><a href="/rltoken/UGo4ArPFHhx-ow2QtZWILA" title="Flask tests" target="_blank">Flask tests</a> </li>
+<li><a href="/rltoken/vq8ER3xb99-N2anC-zke3A" title="Flask-CORS" target="_blank">Flask-CORS</a> </li>
+</ul>
+
+## <h2>Learning Objectives</h2>
+
+<p>At the end of this project, you are expected to be able to <a href="/rltoken/5ySNbjsNA0dTL8YhhgtFog" title="explain to anyone" target="_blank">explain to anyone</a>, <strong>without the help of Google</strong>:</p>
+
+<h3>General</h3>
+
+<ul>
+<li>What REST means</li>
+<li>What API means</li>
+<li>What CORS means</li>
+<li>What is an API</li>
+<li>What is a REST API</li>
+<li>What are other type of APIs</li>
+<li>Which is the HTTP method to retrieve resource(s)</li>
+<li>Which is the HTTP method to create a resource</li>
+<li>Which is the HTTP method to update resource</li>
+<li>Which is the HTTP method to delete resource</li>
+<li>How to request REST API</li>
+</ul>
+
+## <h2>Requirements</h2>
+
+<h3>Python Scripts</h3>
+
+<ul>
+<li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code></li>
+<li>All your files will be interpreted/compiled on Ubuntu 20.04 LTS using <code>python3</code> (version 3.4.3)</li>
+<li>All your files should end with a new line</li>
+<li>The first line of all your files should be exactly <code>#!/usr/bin/python3</code></li>
+<li>A <code>README.md</code> file, at the root of the folder of the project, is mandatory</li>
+<li>Your code should use the <code>PEP 8</code> style (version 1.7)</li>
+<li>All your files must be executable</li>
+<li>The length of your files will be tested using <code>wc</code></li>
+<li>All your modules should have documentation (<code>python3 -c &#39;print(__import__(&quot;my_module&quot;).__doc__)&#39;</code>)</li>
+<li>All your classes should have documentation (<code>python3 -c &#39;print(__import__(&quot;my_module&quot;).MyClass.__doc__)&#39;</code>)</li>
+<li>All your functions (inside and outside a class) should have documentation (<code>python3 -c &#39;print(__import__(&quot;my_module&quot;).my_function.__doc__)&#39;</code> and <code>python3 -c &#39;print(__import__(&quot;my_module&quot;).MyClass.my_function.__doc__)&#39;</code>)</li>
+<li>A documentation is not a simple word, it&rsquo;s a real sentence explaining what&rsquo;s the purpose of the module, class or method (the length of it will be verified)</li>
+</ul>
+
+## <h3>Python Unit Tests</h3>
+
+<ul>
+<li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code></li>
+<li>All your files should end with a new line</li>
+<li>All your test files should be inside a folder <code>tests</code></li>
+<li>You have to use the <a href="/rltoken/5BK144LlyD8OKE1QdRdSBw" title="unittest module" target="_blank">unittest module</a> </li>
+<li>All your test files should be python files (extension: <code>.py</code>)</li>
+<li>All your test files and folders should start by <code>test_</code></li>
+<li>Your file organization in the tests folder should be the same as your project: ex: for <code>models/base_model.py</code>, unit tests must be in: <code>tests/test_models/test_base_model.py</code></li>
+<li>All your tests should be executed by using this command: <code>python3 -m unittest discover tests</code></li>
+<li>You can also test file by file by using this command: <code>python3 -m unittest tests/test_models/test_base_model.py</code></li>
+<li>We strongly encourage you to work together on test cases, so that you don&rsquo;t miss any edge cases</li>
+</ul>
+
+
 ## Table of Content
 * [Environment](#environment)
 * [Installation](#installation)
