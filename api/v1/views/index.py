@@ -10,7 +10,7 @@ def status():
     """Returns status"""
     return jsonify({'status': 'OK'})
 
-@app_views.route("/stats", strict_slashes=False)
+@app_views.route("/stats")
 def stats():
     """Returns stats"""
     return jsonify({"amenities": storage.count("Amenity"),
