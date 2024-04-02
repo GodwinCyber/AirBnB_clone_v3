@@ -122,6 +122,3 @@ class TestFileStorage(unittest.TestCase):
         new_count = storage.count(State)
         self.assertEqual(initial_count + 1, new_count)
 
-
-if __name__ == '__main__':
-    unittest.main()
