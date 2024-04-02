@@ -12,5 +12,5 @@ first_state_id = list(storage.all(State).values())[0].id
 print("First state: {}".format(storage.get(State, first_state_id)))
 
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     unittest.main()
