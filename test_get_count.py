@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Test .get() and .count() methods
 """
+import unittest
 from models import storage
 from models.state import State
 
@@ -9,3 +10,7 @@ print("State objects: {}".format(storage.count(State)))
 
 first_state_id = list(storage.all(State).values())[0].id
 print("First state: {}".format(storage.get(State, first_state_id)))
+
+
+if __name__ = '__main__':
+    unittest.main()
