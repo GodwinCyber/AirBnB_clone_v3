@@ -1,3 +1,4 @@
+
 #!/usr/bin/python3
 """
 Contains the FileStorage class
@@ -44,7 +45,7 @@ class FileStorage:
         """serializes __objects to the JSON file (path: __file_path)"""
         json_objects = {}
         for key in self.__objects:
-            json_objects[key] = self.__objects[key].to_dict()
+            json_objects[key] = self.__objects[key].to_dict(False)
         with open(self.__file_path, 'w') as f:
             json.dump(json_objects, f)
 
@@ -55,7 +56,7 @@ class FileStorage:
                 jo = json.load(f)
             for key in jo:
                 self.__objects[key] = classes[jo[key]["__class__"]](**jo[key])
-        except Exception:
+        except Exception as ex:
             pass
 
     def delete(self, obj=None):
@@ -70,29 +71,17 @@ class FileStorage:
         self.reload()
 
     def get(self, cls, id):
-        """A method to retrieve one object: Returns the object based on the
-        class and its ID, or None if not found"""
-        def get(self, cls=None, id=None):
-            """Returns obj based on class name and its ID"""
-        if cls is not None and id is not None:
-            for v in self.__objects.values():
-                if cls == v.__class__ or cls == v.__class__.__name__:
-                    if v.id == id:
-                        return v
+        """ retrieves """
+        if cls in classes.values() and id and type(id) == str:
+            d_obj = self.all(cls)
+            for key, value in d_obj.items():
+                if key.split(".")[1] == id:
+                    return value
         return None
 
     def count(self, cls=None):
-        """A method to count the number of objects in storage: Returns the
-        number of objects in storage matching the given class. If no
-        class is passed, returns the count of all objects in storage."""
-        def count(self, cls=None):
-            count = 0
-            if cls is not None and cls in classes:
-                for v in self.__objects.values():
-                    if cls == v.__class__ or cls == v.__class__.__name__:
-                        count += 1
-            else:
-                for i in self.__objects.values():
-                    count += 1
-
-            return count
+        """ counts """
+        data = self.all(cls)
+        if cls in classes.values():
+            data = self.all(cls)
+        return len(data)
